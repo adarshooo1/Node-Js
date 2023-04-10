@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARALLEX</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: sans-serif;
+        }
+        
+        .parent {
+            background-image: url('your-image-url');
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* other styles */
+            }
+                    
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 10vh;
+            background-color: ghostwhite;
+            color: #030334;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+        }
+        
+        nav li {
+            margin: 0 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        nav li:hover {
+            color: chartreuse;
+        }
+        
+        .mid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 120vh;
+            background-image: url('https://source.unsplash.com/1600x900/?nature');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        
+        .mid > div {
+            max-width: 800px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 50px;
+            overflow: hidden;
+        }
+
+        .mid > div:last-child {
+            margin-bottom: 0;
+        }
+        
+        .mid h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        
+        .foot {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 10vh;
+            background-color: #424141;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="Parent">
+        <div class="top">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                  </ul>
+            </nav>
+        </div>
+        <div class="mid">
+            <div>
+                <h1>PARAGRAPH</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum odit sed, optio unde quod qui laudantium blanditiis eligendi pariatur, deserunt quos sint. Perspiciatis obcaecati corrupti officiis ab itaque voluptates? Adipisci.</p>
+            </div>
+            <br>
+            <div>
+                <h1>PARAGRAPH 2</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum odit sed, optio unde quod qui laudantium blanditiis eligendi pariatur, deserunt quos sint. Perspiciatis obcaecati corrupti officiis ab itaque voluptates? Adipisci.</p>
+            </div>
+            <br>
+            <div>
+                <h1>PARAGRAPH 3</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum odit sed, optio unde quod qui laudantium blanditiis eligendi pariatur, deserunt quos sint. Perspiciatis obcaecati corrupti officiis ab itaque voluptates? Adipisci.</p>
+            </div>
+        </div>
+        <div class="foot">
+            <p>&copy; 2023 PARALLEX. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html> 

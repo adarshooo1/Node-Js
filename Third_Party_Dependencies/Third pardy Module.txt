@@ -1,0 +1,3 @@
+//In The project what we are using :
+1.Nodemon which is a third party dependency.(It is helpfull)
+2.Pokemon Which is a third party dependency.(It is for fun)
